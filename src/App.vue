@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <nav>
+      <router-link to="/">Domek</router-link>
+      <router-link to="/about">About</router-link>
+    </nav>
+    <router-view />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppComponent from './components/AppComponent.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    AppComponent
   }
 }
 </script>
@@ -24,5 +27,26 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  text-align: center;
+  padding-top: 50px;
+
 }
+  body{
+    background: #0F2027;
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+
+  }
+  nav{
+    padding: 20px 20px 20px 0;
+  }
+  nav a{
+    padding: 10px;
+    text-decoration: none;
+    background-color: #6a787f;
+    border-radius: 3px;
+    color: #3c2f63;
+    font-weight: bold;
+    margin-right: 15px;
+  }
 </style>
