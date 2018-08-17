@@ -1,11 +1,12 @@
 <template>
   <div class="hello">
     <div class="holder">
+        <p>{{number}}</p>
         <form @submit.prevent="addStatment">
             <transition name="alert-in" enter-active-class="animated fadeInLeft" leave-active-class="animated fadeOutRight">
                 <p class="alert" v-if="errors.has('skill')">{{errors.first('skill')}}</p>
             </transition>
-            <input type="text" placeholder="Enter a text" v-model="skill" v-bind:disabled="!checked" v-validate="'min:5'" name="skill">
+            <input type="text" id="input" placeholder="Enter a text" v-model="skill" v-bind:disabled="!checked" v-validate="'min:5'" name="skill">
             <br/>
             <input type="checkbox" id="checkbox" v-model="checked" v-on:click="changeValue"><label for="checkbox">Use this checkbox to make input: {{checkboxMsg}}</label>
         </form>
@@ -28,9 +29,10 @@
                 checkboxMsg: 'Enable',
                 skill: '',
                 skills: [
-                    { "skill": "vue"},
-                    { "skill": "angular"}
-                ]
+                    { "skill": "kapusta"},
+                    { "skill": "ogórki"}
+                ],
+                number: 0
             }
         },
         methods: {
@@ -57,7 +59,16 @@
                 }else {
                     this.checkboxMsg = 'Enable';
                 }
+            },
+            handleScroll () {
+                this.number = Math.floor(Math.random() * window.innerHeight) + 1
             }
+        },
+        created () {
+            document.addEventListener('scroll', this.handleScroll);
+        },
+        destroyed () {
+            document.removeEventListener('scroll', this.handleScroll);
         }
     }
 </script>
@@ -150,7 +161,7 @@
     .alert {
         position: fixed;
         padding: 5px;
-        left: 10%;
+        left: 20%;
         color:red;
         margin-top: -20px;
     }
