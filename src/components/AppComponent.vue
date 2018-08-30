@@ -75,6 +75,7 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+    @import url('https://fonts.googleapis.com/css?family=Acme');
     @import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
     h3 {
       margin: 40px 0 0;
@@ -90,15 +91,16 @@
         border-left: 5px #2478cc solid;
         font-size: 120%;
         font-weight: bold;
-        background: #005AA7;
-        background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);
-        background: linear-gradient(to right, #FFFDE4, #005AA7);
+        background: gray;
+        //background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);
+        //background: linear-gradient(to right, #FFFDE4, #005AA7);
 
     }
     a {
       color: #42b983;
     }
     .hello{
+        font-family: 'Acme', sans-serif;
     }
     span{
         float: left;

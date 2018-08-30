@@ -14,34 +14,48 @@
         </md-list>
         <h1>Hello you!</h1>
         <md-avatar class="md-large">
-            <img class="avatar" v-bind:src="arrayImg[value4]" alt="Avatar" v-on:click.once="changeValue()"/>
+            <img class="avatar" id="ava1" v-bind:src="arrayImg[value4]" alt="Avatar" v-on:click.once="changeValue()"/>
+        </md-avatar>
+        <md-avatar class="md-large">
+            <img class="avatar"  v-bind:src="arrayImg[value4]" alt="Avatar" v-on:click.once="changeValue()" style="opacity:0"/>
+        </md-avatar>
+        <md-avatar class="md-large">
+            <img class="avatar" id="ava2" v-bind:src="arrayImg[value5]" v-on:click.once="changeValue()" alt="Avatar"/>
         </md-avatar>
         <md-avatar class="md-large">
             <img class="avatar" v-bind:src="arrayImg[value4]" alt="Avatar" v-on:click.once="changeValue()" style="opacity:0"/>
         </md-avatar>
         <md-avatar class="md-large">
-            <img class="avatar" v-bind:src="arrayImg[value5]" v-on:click.once="changeValue()" alt="Avatar"/>
-        </md-avatar>
-        <md-avatar class="md-large">
-            <img class="avatar" v-bind:src="arrayImg[value4]" alt="Avatar" v-on:click.once="changeValue()" style="opacity:0"/>
-        </md-avatar>
-        <md-avatar class="md-large">
-            <img class="avatar" v-bind:src="arrayImg[value6]" v-on:click.once="changeValue()" alt="Avatar"/>
+            <img class="avatar"  id="ava3" v-bind:src="arrayImg[value6]" v-on:click.once="changeValue()" alt="Avatar"/>
         </md-avatar>
         <br />
         <md-avatar class="md-large">
-            <img class="avatar" v-bind:src="arrayImg[value1]" v-on:click.once="changeValue()" alt="Avatar"/>
+            <img class="avatar" id="ava4" v-bind:src="arrayImg[value1]" v-on:click.once="changeValue()" alt="Avatar"/>
         </md-avatar>
         <md-avatar class="md-large">
             <img class="avatar" v-bind:src="arrayImg[value4]" v-on:click.once="changeValue()" alt="Avatar" style="opacity:0"/>
         </md-avatar>
         <md-avatar class="md-large">
-            <img class="avatar" v-bind:src="arrayImg[value2]" v-on:click.once="changeValue()" alt="Avatar"/>
+            <img class="avatar"  id="ava5" v-bind:src="arrayImg[value2]" v-on:click.once="changeValue()" alt="Avatar"/>
         </md-avatar>
         <br />
         <md-avatar class="md-large">
-            <img class="avatar" v-bind:src="arrayImg[value3]" v-on:click.once="changeValue()" alt="Avatar"/>
+            <img class="avatar"  id="ava6" v-bind:src="arrayImg[value3]" v-on:click.once="changeValue()" alt="Avatar"/>
         </md-avatar>
+        <br/>
+        <br/>
+        <div style="width: 100%; text-align: left">
+            <md-avatar class="md-large avatar" id="avaround">
+                <img  v-bind:src="arrayImg[value4]" alt="Avatar" v-on:click.once="changeValue()"/>
+            </md-avatar>
+            <br>
+            <md-avatar class="md-large avatar" id="avaround2">
+                <img  v-bind:src="arrayImg[value4]" alt="Avatar" v-on:click.once="changeValue()"/>
+            </md-avatar>
+            <md-avatar class="md-large avatar" id="avaround3">
+                <img  v-bind:src="arrayImg[value4]" alt="Avatar" v-on:click.once="changeValue()"/>
+            </md-avatar>
+        </div>
         <p>You are here, so here you are. Uhm i mean here you are, so you are here. Basicly its mean that you are here, but you are already here, so here you are!</p>
         <div>
             <md-dialog :md-active.sync="showDialog">
@@ -96,8 +110,8 @@
             <md-button class="md-primary md-raised" v-on:click="randomComment()">Add comment</md-button>
             <br />
             <md-list class="md-triple-line md-dense" style="float: left; background-color: rgba(0,0,0, 0); border: none;">
-                <md-list-item  v-for="(rand, index) in randomArray1" :key="index" style=" border-bottom: solid 1px darkgray">
-                    <md-avatar>
+                <md-list-item  v-for="(rand, index) in randomArray1" :key="index" style=" border-bottom: solid 1px darkgray" class="list" name="list" enter-active-class="animated jackInTheBox" leave-active-class="animated zoomOutDown">
+                    <md-avatar >
                         <img v-bind:src="rand" alt="People">
                     </md-avatar>
                     <div class="md-list-item-text">
@@ -207,6 +221,7 @@
     }
 </script>
 <style>
+    @import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
     .about{
         color: #d4ecf8;
         margin: 0px;
@@ -238,6 +253,23 @@
         -o-animation-play-state: paused;
         animation-play-state: paused;
         transform: scale(1, 1) rotate(0deg);
+    }
+    .list{
+        animation: wow 0.4s 1;
+    }
+    @keyframes wow {
+        0% {
+            transform: scale(1, 1) rotate(-10deg);
+        }
+        33% {
+            transform: scale(1, 1) rotate(3deg);
+        }
+        66% {
+            transform: scale(1, 1) rotate(-4deg);
+        }
+        100% {
+            transform: scale(1, 1) rotate(0deg);
+        }
     }
 
     @keyframes shake{
@@ -288,5 +320,130 @@
         top: 0px;
 
     }
+    .alert-in-enter-active {
+        animation: bounce-in .6s;
+    }
+    .alert-in-leave-active {
+        animation: bounce-in .6s reverse;
+    }
+    @keyframes bounce-in {
+        0%{
+            transform: scale(0);
+            left: 70%;
+        }
+        20% {
+            transform: scale(1.2);
+            left: 70%;
+        }
+        100% {
+            transform: scale(1);
+            left: 10%;
+        }
 
+    }
+    #ava1{
+        animation-delay: 1s;
+    }
+    #ava2{
+        animation-delay: 1.5s;
+    }
+    #ava3{
+        animation-delay: 0s;
+    }
+    #ava4{
+        animation-delay: 2.3s;
+    }
+    #ava5{
+        animation-delay: 1.2s;
+    }
+    #ava6{
+        animation-delay: 3.3s;
+    }
+    #avaround {
+        float: left;
+        animation: theySeeMeRollin 10s infinite;
+        position: absolute;
+        left: 0;
+    }
+    #avaround2, #avaround3 {
+        float: left;
+        animation: theySeeMeRollin2 10s infinite ease-in-out;
+        position: absolute;
+        left: 0;
+        top: 10px;
+    }
+    #avaround2 {
+        left: 384px;
+        top: 10px;
+        animation: theySeeMeRollin3 10s infinite ease-in-out reverse;
+    }
+    @keyframes theySeeMeRollin {
+        0%{
+            transform: scale(1) rotate(0deg);
+            left: 0px;
+        }
+        40% {
+            transform: scale(1) rotate(360deg);
+            left: 256px;
+        }
+        80% {
+            transform: scale(1) rotate(0deg);
+            left: 0px;
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    @keyframes theySeeMeRollin2 {
+        0%{
+            transform: scale(1) rotate(0deg);
+            left: 0px;
+            top: 10px;
+        }
+        20%{
+            top: 80px;
+        }
+        40% {
+            transform: scale(1) rotate(360deg);
+            left: 256px;
+            top: 10px;
+        }
+
+        80% {
+            transform: scale(1) rotate(0deg);
+            left: 0px;
+            top: 10px;
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    @keyframes theySeeMeRollin3 {
+        0%{
+            transform: scale(1) rotate(0deg);
+            left: 384px;
+            top: 10px;
+        }
+        20%{
+            top: 138px;
+            left: 138px;
+        }
+        40% {
+            transform: scale(1) rotate(360deg);
+            left: 384px;
+            top: 266px;
+        }
+        60%{
+            top: 138px;
+            left: 512px;
+        }
+        80% {
+            transform: scale(1) rotate(0deg);
+            left: 384px;
+            top: 10px;
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
 </style>

@@ -1,0 +1,246 @@
+<template>
+    <div class="noFound" style="">
+        <p class="neon">Sorry but the URL address is not cool enought, <br><br><br> so enjoy this page!</p>
+        <p class="neonik"></p>
+        <div class="plug">
+            <img id="img1" src="../assets/wtyczka1.png" >
+            <img id="img2" src="../assets/wtyczka2.png" >
+        </div>
+    </div>
+</template>
+<script>
+    export default {
+        name: 'NoFound',
+        data() {
+            return {
+                showDialog: false,
+            }
+        },
+        methods: {
+        }
+    }
+</script>
+<style>
+    @import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
+    @import url('https://fonts.googleapis.com/css?family=Monoton');
+
+    .neon {
+        color: black;
+        font-family: 'Monoton', cursive;
+        font-size: 5vh;
+        animation: lightSaber 10s infinite linear;
+    }
+    .neonik {
+        color: red;
+        font-family: 'Monoton', cursive;
+        font-size: 5vh;
+        float: left;
+        margin-top: 22%;
+    }
+    .neonik::after{
+        content: 'Plug out';
+        animation: lightSaber2 10s infinite linear;
+    }
+    .noFound{
+        height: 100vh;
+        z-index: 50;
+        width: 100vw;
+        background-color: black;
+        position: fixed;
+        top: -0vh;
+        overflow: hidden;
+    }
+    .plug{
+        width: 200px;
+        height: 200px;
+        bottom: 0px;
+        left: 0px;
+        position: absolute;
+    }
+    .plug #img1 {
+        position: absolute;
+        left: 0px;
+        animation: plugin 10s infinite linear;
+    }
+    .plug #img2 {
+        position: absolute;
+        left: 0px;
+        animation: plugon 10s infinite linear;
+    }
+    @keyframes lightSaber {
+        0%{
+            color: black;
+        }
+        19%{
+            color: black;
+        }
+        20%{
+              color: red;
+          }
+        21%{
+            color: black;
+        }
+        22%{
+            color: red;
+        }
+        25%{
+            color: black;
+        }
+        26%{
+            color: red;
+        }
+        50%{
+            color: red;
+        }
+        52% {
+            color: black;
+        }
+        54% {
+            color: red;
+        }
+        79%{
+            color: red;
+        }
+        80%{
+            color: black;
+        }
+    }
+    @keyframes lightSaber2 {
+        0%{
+            content: 'Plug out';
+        }
+        19%{
+            content: 'Plug out';
+        }
+        20%{
+            content: 'Plug in';
+        }
+        21%{
+            content: 'Plug out';
+        }
+        22%{
+            content: 'Plug in';
+        }
+        25%{
+            content: 'Plug out';
+        }
+        26%{
+            content: 'Plug in';
+        }
+        50%{
+            content: 'Plug in';
+        }
+        52% {
+            content: 'Plug out';
+        }
+        54% {
+            content: 'Plug in';
+        }
+        79%{
+            content: 'Plug in';
+        }
+        80%{
+            content: 'Plug out';
+        }
+    }
+    @keyframes plugin {
+        0% {
+            left: 0px;
+            bottom: 0px;
+        }
+        19% {
+            left: 0px;
+            bottom: 0px;
+        }
+        20% {
+            left: 17px;
+            bottom: 17px;
+        }
+        21% {
+            left: 8px;
+            bottom: 8px;
+        }
+        22% {
+            left: 17px;
+            bottom: 17px;
+        }
+        25% {
+            left: 8px;
+            bottom: 8px;
+        }
+        26% {
+            left: 17px;
+            bottom: 17px;
+        }
+        50% {
+            left: 17px;
+            bottom: 17px;
+        }
+        52% {
+            left: 8px;
+            bottom: 8px;
+        }
+        54% {
+            left: 17px;
+            bottom: 17px;
+        }
+        79% {
+            left: 17px;
+            bottom: 17px;
+        }
+        80% {
+            left: 0px;
+            bottom: 0px;
+        }
+    }
+    @keyframes plugon {
+        0% {
+            left: 0px;
+            bottom: 0px;
+        }
+        19% {
+            left: 0px;
+            bottom: 0px;
+        }
+        20% {
+            left: -17px;
+            bottom: -17px;
+        }
+        21% {
+            left: -8px;
+            bottom: -8px;
+        }
+        22% {
+            left: -17px;
+            bottom: -17px;
+        }
+        25% {
+            left: -8px;
+            bottom: -8px;
+        }
+        26% {
+            left: -17px;
+            bottom: -17px;
+        }
+        50% {
+            left: -17px;
+            bottom: -17px;
+        }
+        52% {
+            left: -8px;
+            bottom: -8px;
+        }
+        54% {
+            left: -17px;
+            bottom: -20px;
+        }
+        79% {
+            left: -17px;
+            bottom: -17px;
+        }
+        80% {
+            left: 0px;
+            bottom: 0px;
+        }
+    }
+</style>

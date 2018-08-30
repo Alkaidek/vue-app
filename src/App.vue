@@ -15,7 +15,7 @@
           <md-icon>add</md-icon>
         </md-speed-dial-target>
 
-        <md-speed-dial-content>
+        <md-speed-dial-content style="z-index: 26">
           <md-button class="md-icon-button" to="/" style="background-color: #448aff">
             <md-icon >home</md-icon>
           </md-button>
@@ -44,8 +44,9 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    @import url('https://fonts.googleapis.com/css?family=Acme');
+  #app {
+      font-family: 'Acme', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -63,6 +64,7 @@ export default {
     height: 2000px;
     margin: 0px;
     padding: 0px;
+      font-family: 'Acme', sans-serif;
   }
   html, #app {
     margin: 0px;
