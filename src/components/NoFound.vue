@@ -2,6 +2,10 @@
     <div class="noFound" style="">
         <p class="neon">Sorry but the URL address is not cool enought, <br><br><br> so enjoy this page!</p>
         <p class="neonik"></p>
+        <!--<audio  autoplay>
+            <source  type="audio/mpeg">
+            <p style="color: white;">If you are reading this, it is because your browser does not support the audio element.     </p>
+        </audio>-->
         <div class="plug">
             <img id="img1" src="../assets/wtyczka1.png" >
             <img id="img2" src="../assets/wtyczka2.png" >
