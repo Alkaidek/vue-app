@@ -259,13 +259,22 @@
     }
     @keyframes wow {
         0% {
-            transform: scale(1, 1) rotate(-10deg);
+            transform: scale(1, 1) rotate(-180deg);
+        }
+        15% {
+            transform: scale(1, 1) rotate(160deg);
         }
         33% {
-            transform: scale(1, 1) rotate(3deg);
+            transform: scale(1, 1) rotate(-130deg);
+        }
+        50% {
+            transform: scale(1, 1) rotate(120deg);
         }
         66% {
-            transform: scale(1, 1) rotate(-4deg);
+            transform: scale(1, 1) rotate(-70deg);
+        }
+        24% {
+            transform: scale(1, 1) rotate(30deg);
         }
         100% {
             transform: scale(1, 1) rotate(0deg);

@@ -11,7 +11,7 @@
             <input type="checkbox" id="checkbox" v-model="checked" v-on:click="changeValue"><label for="checkbox">Use this checkbox to make input: {{checkboxMsg}}</label>
         </form>
         <ul>
-            <transition-group name="list" enter-active-class="animated zoomInUp" leave-active-class="animated zoomOutDown">
+            <transition-group name="list" enter-active-class="alert-in-enter-active" leave-active-class="alert-in-leave-active">
                 <li v-for="(data, index) in skills" :key='index'><span>{{index}}: </span>{{ data.skill }}</li>
             </transition-group>
         </ul>
@@ -168,10 +168,10 @@
         margin-top: -20px;
     }
     .alert-in-enter-active {
-        animation: bounce-in .6s;
+        animation: scalelele 1s;
     }
     .alert-in-leave-active {
-        animation: bounce-in .6s reverse;
+        animation: scalelele 1s reverse;
     }
     @keyframes bounce-in {
         0%{
@@ -186,6 +186,23 @@
             transform: scale(1);
             left: 10%;
         }
-
+    }
+    @keyframes scalelele {
+        0% {
+            transform: scale(0);
+            opacity: 0;
+            border: #1d5663 3px solid;
+        }
+        25% {
+            border: #631014 3px solid;
+        }
+        50% {
+            transform: scale(1.5);
+            border: 3px solid #635f27;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
     }
 </style>

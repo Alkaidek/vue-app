@@ -1,12 +1,13 @@
 <template>
     <div class="noFound" style="">
-        <p class="neon">Sorry but the URL address is not cool enought, <br><br><br> so enjoy this page!</p>
-        <p class="neonik"></p>
+        <p class="neon not-selectable">Sorry but the URL address is not cool enough, <br><br><br> so enjoy this page!</p>
+        <p class="neonik not-selectable"></p>
         <!--<audio  autoplay>
             <source  type="audio/mpeg">
             <p style="color: white;">If you are reading this, it is because your browser does not support the audio element.     </p>
         </audio>-->
         <div class="plug">
+            <img id="img3" src="../assets/wtyczka3.png" >
             <img id="img1" src="../assets/wtyczka1.png" >
             <img id="img2" src="../assets/wtyczka2.png" >
         </div>
@@ -28,11 +29,20 @@
     @import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
     @import url('https://fonts.googleapis.com/css?family=Monoton');
 
+    .not-selectable {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
     .neon {
         color: black;
         font-family: 'Monoton', cursive;
         font-size: 5vh;
         animation: lightSaber 10s infinite linear;
+
     }
     .neonik {
         color: red;
@@ -60,6 +70,10 @@
         bottom: 0px;
         left: 0px;
         position: absolute;
+    }
+    .plug #img3 {
+        position: absolute;
+        left: 0px;
     }
     .plug #img1 {
         position: absolute;

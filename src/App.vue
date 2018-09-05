@@ -26,17 +26,18 @@
         </md-speed-dial-content>
       </md-speed-dial>
     </div>
-
   </div>
 </template>
 
 <script>
 import AppComponent from './components/AppComponent.vue'
 import About from "./components/About";
+import NoFound from "./components/NoFound";
 
 export default {
   name: 'app',
   components: {
+      NoFound,
       About,
     AppComponent
   }
