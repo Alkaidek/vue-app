@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import AppComponent from './components/AppComponent.vue'
 import About from './components/About.vue'
 import NoFound from './components/NoFound.vue'
+import NewContent from './components/NewContent'
+import contenter from './components/contenter'
 
 Vue.use(Router)
 
@@ -19,13 +21,23 @@ export default new Router({
             component: About
         },
         {
+            path: '/newContent',
+            name: 'newContent',
+            component: NewContent
+        },
+        {
+            path: '/contenter',
+            name: 'contenter',
+            component: contenter
+        },
+        {
             path: '/*',
             name: 'nofound',
             component: NoFound
         },
         {
             path: '*',
-            name: 'nofound',
+            name: '2ndnofound',
             component: NoFound
         }
 

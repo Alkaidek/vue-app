@@ -42,14 +42,15 @@
         font-family: 'Monoton', cursive;
         font-size: 5vh;
         animation: lightSaber 10s infinite linear;
-
+        text-shadow: 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px red, 0 0 0px black;
     }
     .neonik {
-        color: red;
+        color: white;
         font-family: 'Monoton', cursive;
         font-size: 5vh;
         float: left;
         margin-top: 22%;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px red, 0 0 35px red, 0 0 40px red, 0 0 50px red, 0 0 75px red;
     }
     .neonik::after{
         content: 'Plug out';
@@ -88,39 +89,51 @@
     @keyframes lightSaber {
         0%{
             color: black;
+            text-shadow: 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px red, 0 0 0px black;
         }
         19%{
             color: black;
+            text-shadow: 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px red, 0 0 0px black;
         }
         20%{
-              color: red;
+            color: white;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px red, 0 0 35px red, 0 0 40px red, 0 0 50px red, 0 0 75px red;
           }
         21%{
             color: black;
+            text-shadow: 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px red, 0 0 0px black;
         }
         22%{
-            color: red;
+            color: white;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px red, 0 0 35px red, 0 0 40px red, 0 0 50px red, 0 0 75px red;
         }
         25%{
             color: black;
+            text-shadow: 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px red, 0 0 0px black;
         }
         26%{
-            color: red;
+            color: white;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px red, 0 0 35px red, 0 0 40px red, 0 0 50px red, 0 0 75px red;
         }
         50%{
-            color: red;
+            color: white;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px red, 0 0 35px red, 0 0 40px red, 0 0 60px red, 0 0 90px red;
         }
         52% {
             color: black;
+            text-shadow: 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px red, 0 0 0px black;
         }
         54% {
-            color: red;
+            color: white;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px red, 0 0 35px red, 0 0 40px red, 0 0 50px red, 0 0 75px red;
         }
         79%{
-            color: red;
+            color: white;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px red, 0 0 40px red, 0 0 24px red, 0 0 30px red, 0 0 90px red;
         }
         80%{
             color: black;
+            text-shadow: 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px red, 0 0 0px black;
         }
     }
     @keyframes lightSaber2 {
@@ -250,7 +263,7 @@
         }
         54% {
             left: -17px;
-            bottom: -20px;
+            bottom: -17px;
         }
         79% {
             left: -17px;

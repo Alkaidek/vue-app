@@ -4,7 +4,11 @@
       <md-tabs md-sync-route class="md-primary" md-alignment="centered">
         <md-tab id="tab-home" md-icon="home" to="/">
         </md-tab>
-        <md-tab id="tab-pages" md-icon="info" to="/about">
+        <md-tab id="tab-about" md-icon="info" to="/about">
+        </md-tab>
+        <md-tab id="tab-new-content" md-icon="whatshot" to="/newContent">
+        </md-tab>
+        <md-tab id="tab-black-sabat" md-icon="blur_on" to="/blackSideOfTheInternet">
         </md-tab>
       </md-tabs>
     </div>
@@ -23,6 +27,19 @@
           <md-button class="md-icon-button" to="about" style="background-color: #448aff" >
             <md-icon>info</md-icon>
           </md-button>
+
+          <md-button class="md-icon-button" to="newContent" style="background-color: #448aff" >
+            <md-icon>whatshot</md-icon>
+          </md-button>
+
+          <md-button class="md-icon-button" to="contenter" style="background-color: #448aff" >
+            <md-icon>whatshot</md-icon>
+          </md-button>
+
+          <md-button class="md-icon-button" to="/nowhere" style="background-color: black" >
+            <md-icon>blur_on
+            </md-icon>
+          </md-button>
         </md-speed-dial-content>
       </md-speed-dial>
     </div>
@@ -33,12 +50,16 @@
 import AppComponent from './components/AppComponent.vue'
 import About from "./components/About";
 import NoFound from "./components/NoFound";
+import NewContent from "./components/NewContent";
+import contenter from "./components/contenter";
 
 export default {
   name: 'app',
   components: {
       NoFound,
       About,
+      NewContent,
+      contenter,
     AppComponent
   }
 }

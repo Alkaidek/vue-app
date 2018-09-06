@@ -12,7 +12,7 @@
         </form>
         <ul>
             <transition-group name="list" enter-active-class="alert-in-enter-active" leave-active-class="alert-in-leave-active">
-                <li v-for="(data, index) in skills" :key='index'><span>{{index}}: </span>{{ data.skill }}</li>
+                <li v-for="(data, index) in skills" :key='index' style="font-variant: small-caps;"><span>{{index}}: </span>{{ data.skill | capitalize }}</li>
             </transition-group>
         </ul>
     </div>
@@ -33,6 +33,19 @@
                     { "skill": "ogórki"}
                 ],
                 number: 0
+            }
+        },
+        filters: {
+            capitalize(value) {
+                let txt = '';
+                for( let i = 0; i < value.length; i++ ) {
+                    if ( i % 2 !== 0 ) {
+                        txt = txt + value.charAt(i).toUpperCase();
+                    }else {
+                        txt = txt + value.charAt(i);
+                    }
+                }
+                return txt;
             }
         },
         methods: {
