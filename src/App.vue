@@ -32,10 +32,6 @@
             <md-icon>whatshot</md-icon>
           </md-button>
 
-          <md-button class="md-icon-button" to="contenter" style="background-color: #448aff" >
-            <md-icon>whatshot</md-icon>
-          </md-button>
-
           <md-button class="md-icon-button" to="/nowhere" style="background-color: black" >
             <md-icon>blur_on
             </md-icon>
