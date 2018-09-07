@@ -12,8 +12,8 @@
 
         <div class="cube" style="display: inline-block">
             <div class="side front"></div>
-            <div class="side back"></div>
-            <div class="side right ciri"></div>
+            <div class="side back monster"></div>
+            <div class="side right aligator"></div>
             <div class="side left ciri"></div>
             <div class="side top witcher"></div>
             <div class="side bottom plotka"></div>
@@ -110,7 +110,7 @@
         height: 2em;
         background: rgba(255,0,0,.4);
         background-image: url('https://i.giphy.com/media/EAtAXa5KHaQCs/giphy.webp');
-        border: 1px solid rgba(0,0,0,.5);
+        border: 1px solid rgba(0,2,0,.5);
         background-size: cover;
         color: white;
         text-align: center;
@@ -220,5 +220,10 @@
     .witcher {
         background-image: url('https://media.giphy.com/media/SGfWWpPV6LO92/giphy.gif');
     }
-
+    .monster {
+        background-image: url('https://media.giphy.com/media/8QVZvKIVMm7Qs/giphy.gif');
+    }
+    .aligator {
+        background-image: url('https://media.giphy.com/media/PaKWbsWWdttmg/giphy.gif');
+    }
 </style>

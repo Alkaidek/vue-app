@@ -131,7 +131,7 @@
             color: white;
             text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px red, 0 0 40px red, 0 0 24px red, 0 0 30px red, 0 0 90px red;
         }
-        80%{
+        90%{
             color: black;
             text-shadow: 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px red, 0 0 0px black;
         }
