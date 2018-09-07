@@ -47,7 +47,6 @@ import AppComponent from './components/AppComponent.vue'
 import About from "./components/About";
 import NoFound from "./components/NoFound";
 import NewContent from "./components/NewContent";
-import contenter from "./components/contenter";
 
 export default {
   name: 'app',
@@ -55,7 +54,6 @@ export default {
       NoFound,
       About,
       NewContent,
-      contenter,
     AppComponent
   }
 }

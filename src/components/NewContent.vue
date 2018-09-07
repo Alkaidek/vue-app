@@ -1,7 +1,11 @@
 <template>
 
     <div id="NewContent">
-        <div class="cube">
+        <bezier-bcg></bezier-bcg>
+        <atom-man style="display: inline-block; transform: rotate(270deg)"></atom-man>
+        <atom-man style="display: inline-block"></atom-man> <br/>
+        <atom-box></atom-box>
+        <div class="cube" style="display: inline-block">
             <div class="side front"></div>
             <div class="side back"></div>
             <div class="side right ciri"></div>
@@ -30,13 +34,20 @@
 
 <script>
     import contenter from "./contenter";
+    import BezierBcg from "./bezierBcg";
+    import AtomMan from "./atomMan";
+    import AtomBox from "./atomBox";
     export default {
         name: "NewContent",
-        components: {contenter}
+        components: {AtomBox, AtomMan, BezierBcg, contenter}
     }
 </script>
 
 <style>
+    #NewContent {
+        background-color: white;
+        height: 300vh;
+    }
     .fridi {
         color: red;
         width: 33%;
@@ -100,6 +111,7 @@
         text-align: center;
         line-height: 2em;
         opacity: 0.5;
+        transition: 0.5s;
     }
     .side:hover {
         opacity: 1;
