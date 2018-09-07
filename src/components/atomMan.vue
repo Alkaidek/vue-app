@@ -73,6 +73,42 @@
         0%{
             transform: scale(1, 1) rotate(0deg);
         }
+        30% {
+            transform: scale(1, 1) rotate(0deg);
+            background-color: lightgray;
+        }
+        31% {
+            transform: scale(1, 1) rotate(0deg);
+            background-color: darkgray;
+        }
+        32% {
+            transform: scale(1, 1) rotate(0deg);
+            background-color: lightgray;
+        }
+        40% {
+            transform: scale(1, 1) rotate(0deg);
+            background-color: lightgrey;
+        }
+        41% {
+            transform: scale(1, 1) rotate(0deg);
+            background-color: gray;
+        }
+        42% {
+            transform: scale(1, 1) rotate(0deg);
+            background-color: lightgray;
+        }
+        49% {
+            transform: scale(1, 1) rotate(0deg);
+            background-color: lightgray;
+        }
+        50% {
+            transform: scale(1, 1) rotate(0deg);
+            background-color: darkgray;
+        }
+        51% {
+            transform: scale(1, 1) rotate(0deg);
+            background-color: lightgray;
+        }
         79% {
             transform: scale(1, 1) rotate(0deg);
         }

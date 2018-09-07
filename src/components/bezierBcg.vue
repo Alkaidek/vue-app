@@ -8,7 +8,7 @@
                         <stop offset="100%" stop-color="#493240"/>
                     </linearGradient>
                 </defs>
-                <path d="M0,90 C150,25 350,150 500,80 L500,00 L0,0 Z"  style="stroke: none; fill:url(#Gradient1); padding-top: 0px; margin-top: 0px; position: absolute; top: 0px;" ></path>
+                <path d="M0,90 C150,25 350,150 500,70 L500,00 L0,0 Z"  style="stroke: none; fill:url(#Gradient1); padding-top: 0px; margin-top: 0px; position: absolute; top: 0px;" ></path>
             </svg>
         </div>
 

@@ -36,24 +36,44 @@
     .block {
         background-color: lightgray;
         transition: .5s;
-        animation: atomicBox 10s infinite linear;
+        animation: atomicBox 20s infinite linear;
     }
     @keyframes atomicBox {
         0% {
             transform: scale(1, 1) rotate(0deg);
             background-color: lightgrey;
         }
+        30% {
+            transform: scale(1, 1) rotate(0deg);
+            background-color: lightgray;
+        }
+        31% {
+            transform: scale(1, 1) rotate(0deg);
+            background-color: darkgray;
+        }
+        32% {
+            transform: scale(1, 1) rotate(0deg);
+            background-color: lightgray;
+        }
         79% {
             transform: scale(1, 1) rotate(0deg);
             background-color: lightgrey;
+            z-index: 5;
         }
         80% {
             transform: scale(2.8, 2.8) rotate(0deg);
             background-color: aqua;
+            z-index: 25;
+        }
+        90%{
+            transform: scale(1, 1) rotate(0deg);
+            background-color: lightgrey;
+            z-index: 5;
         }
         100%{
             transform: scale(1, 1) rotate(0deg);
             background-color: lightgrey;
+            z-index: 5;
         }
     }
 </style>
