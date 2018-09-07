@@ -4,7 +4,12 @@
         <bezier-bcg></bezier-bcg>
         <atom-man style="display: inline-block; transform: rotate(270deg)"></atom-man>
         <atom-man style="display: inline-block"></atom-man> <br/>
-        <atom-box></atom-box>
+        <div style="width: 10%">
+            <atom-box></atom-box>
+            <br /><br /><br /><br /><atom-box></atom-box>
+            <br /><br /><br /><br /><atom-box></atom-box>
+        </div>
+
         <div class="cube" style="display: inline-block">
             <div class="side front"></div>
             <div class="side back"></div>
