@@ -29,10 +29,6 @@
 </script>
 
 <style scoped>
-    #atomMan {
-        width: 20vh;
-        height: 20vh;
-    }
     .block {
         background-color: lightgray;
         transition: .5s;

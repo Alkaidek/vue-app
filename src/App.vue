@@ -8,6 +8,8 @@
         </md-tab>
         <md-tab id="tab-new-content" md-icon="whatshot" to="/newContent">
         </md-tab>
+        <md-tab id="tab-ui" md-icon="extension" to="/uiComponent">
+        </md-tab>
         <md-tab id="tab-black-sabat" md-icon="blur_on" to="/blackSideOfTheInternet">
         </md-tab>
       </md-tabs>
@@ -32,6 +34,9 @@
             <md-icon>whatshot</md-icon>
           </md-button>
 
+          <md-button class="md-icon-button" to="/uiComponent" style="background-color: #448aff" >
+            <md-icon>extension</md-icon>
+          </md-button>
           <md-button class="md-icon-button" to="/nowhere" style="background-color: black" >
             <md-icon>blur_on
             </md-icon>

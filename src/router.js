@@ -5,6 +5,7 @@ import About from './components/About.vue'
 import NoFound from './components/NoFound.vue'
 import NewContent from './components/NewContent'
 import contenter from './components/contenter'
+import uiComponent from './components/uiComponent'
 
 Vue.use(Router)
 
@@ -14,6 +15,11 @@ export default new Router({
             path: '/',
             name: 'AppComponent',
             component: AppComponent
+        },
+        {
+            path: '/uiComponent',
+            name: 'uiComponent',
+            component: uiComponent
         },
         {
             path: '/about',
@@ -40,6 +46,5 @@ export default new Router({
             name: '2ndnofound',
             component: NoFound
         }
-
     ]
 })
