@@ -10,7 +10,7 @@
             <div id="item7">{{txt7}}</div>
             <div id="item8">{{txt8}}</div>
         </div>
-        <md-button class="md-raised md-accent"  v-on:click="changeGrid" :disabled="btn">ChangeGrid</md-button>
+        <!--<md-button class="md-raised md-accent"  v-on:click="changeGrid" :disabled="btn">ChangeGrid</md-button>-->
         <md-button class="md-raised md-primary"  v-on:click="changeMargin">ChangeMargin</md-button>
         <md-button class="md-raised md-accent"  v-on:click="changeDisplay">changeDisplay</md-button>
         <md-button class="md-raised md-primary"  v-on:click="changeGap">changeGap</md-button>
@@ -34,9 +34,10 @@
 
 <script>
     import MovingMenu from "./MovingMenu";
+    import MathComponent from "./mathComponent";
     export default {
         name: "gridComponent",
-        components: {MovingMenu},
+        components: {MathComponent, MovingMenu},
         props: [
             'txt1',
             'txt2',

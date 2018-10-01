@@ -7,6 +7,8 @@ import NewContent from './components/NewContent'
 import contenter from './components/contenter'
 import uiComponent from './components/uiComponent'
 import gridComponent from  './components/gridComponent'
+import mathComponent from './components/mathComponent'
+import mathText from './components/mathText'
 
 Vue.use(Router)
 
@@ -31,6 +33,15 @@ export default new Router({
             },
             name: 'gridComponent',
             component: gridComponent
+        },
+        {
+            path: '/math',
+            props: {
+                operation: [2, '+', 2],
+                answers: [4, 5, 10]
+            },
+            name: 'mathComponent',
+            component: mathComponent
         },
         {
             path: '/uiComponent',
@@ -63,6 +74,11 @@ export default new Router({
             path: '/about',
             name: 'about',
             component: About
+        },
+        {
+            path: '/mathText',
+            name: 'mathText',
+            component: mathText
         },
         {
             path: '/newContent',
