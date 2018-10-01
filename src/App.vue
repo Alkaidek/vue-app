@@ -8,7 +8,13 @@
         </md-tab>
         <md-tab id="tab-new-content" md-icon="whatshot" to="/newContent">
         </md-tab>
-        <md-tab id="tab-ui" md-icon="extension" to="/uiComponent">
+        <md-tab id="tab-ui" md-icon="invert_colors_off" to="/uiComponent">
+      </md-tab>
+        <md-tab id="tab-ui-invert" md-icon="invert_colors" to="/uiComponentInvert">
+        </md-tab>
+        <md-tab id="tab-ui-winter" md-icon="color_lens" to="/uiComponentWinter">
+        </md-tab>
+        <md-tab id="tab-grid" md-icon="grid_on" to="/grid">
         </md-tab>
         <md-tab id="tab-black-sabat" md-icon="blur_on" to="/blackSideOfTheInternet">
         </md-tab>
@@ -35,7 +41,16 @@
           </md-button>
 
           <md-button class="md-icon-button" to="/uiComponent" style="background-color: #448aff" >
-            <md-icon>extension</md-icon>
+            <md-icon>invert_colors_off</md-icon>
+          </md-button>
+          <md-button class="md-icon-button" to="/uiComponentInvert" style="background-color: #448aff" >
+            <md-icon>invert_colors</md-icon>
+          </md-button>
+          <md-button class="md-icon-button" to="/uiComponentWinter" style="background-color: #448aff" >
+            <md-icon>color_lens</md-icon>
+          </md-button>
+          <md-button class="md-icon-button" to="/grid" style="background-color: #448aff" >
+            <md-icon>grid_on</md-icon>
           </md-button>
           <md-button class="md-icon-button" to="/nowhere" style="background-color: black" >
             <md-icon>blur_on

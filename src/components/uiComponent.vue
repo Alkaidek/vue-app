@@ -22,6 +22,7 @@
 <script>
     export default {
         name: "uiComponent",
+        props: ['col1', 'col2'],
         data(){
             return {
                 round: true,
@@ -50,17 +51,17 @@
                    document.getElementById('corner6').style.transform = 'rotate(45deg)';
                    /*464619
                    461912*/
-                   document.getElementById('menuRound').style.backgroundColor = '#464619';
-                   document.getElementById('menuRound').style.backgroundColor = '#464619';
-                   document.getElementById('menuBox').style.backgroundColor = '#464619';
-                   document.getElementById('menu').style.backgroundColor = ' #461912';
-                   document.getElementById('menuCircle').style.backgroundColor = '#464619';
-                   document.getElementById('corner').style.backgroundColor = '#464619';
-                   document.getElementById('corner2').style.backgroundColor = '#464619';
-                   document.getElementById('corner3').style.backgroundColor = '#461912';
-                   document.getElementById('corner4').style.backgroundColor = '#461912';
-                   document.getElementById('corner5').style.backgroundColor = '#464619';
-                   document.getElementById('corner6').style.backgroundColor = '#464619';
+                   document.getElementById('menuRound').style.backgroundColor = this.col1;
+                   document.getElementById('menuRound').style.backgroundColor = this.col1;
+                   document.getElementById('menuBox').style.backgroundColor = this.col1;
+                   document.getElementById('menu').style.backgroundColor = this.col2;
+                   document.getElementById('menuCircle').style.backgroundColor = this.col1;
+                   document.getElementById('corner').style.backgroundColor = this.col1;
+                   document.getElementById('corner2').style.backgroundColor = this.col1;
+                   document.getElementById('corner3').style.backgroundColor = this.col2;
+                   document.getElementById('corner4').style.backgroundColor = this.col2;
+                   document.getElementById('corner5').style.backgroundColor = this.col1;
+                   document.getElementById('corner6').style.backgroundColor = this.col1;
                    this.txt =  'The world is gonna rolle me!';
                } else {
                    document.getElementById('menuRound').style.borderRadius = '50%';
@@ -81,21 +82,37 @@
                    document.getElementById('corner6').style.borderRadius = '50%';
                    document.getElementById('corner6').style.transform = 'rotate(0deg)';
 
-                   document.getElementById('menuRound').style.backgroundColor = '#461912';
-                   document.getElementById('menuRound').style.backgroundColor = '#461912';
-                   document.getElementById('menuBox').style.backgroundColor = '#461912';
-                   document.getElementById('menu').style.backgroundColor = ' #464619';
-                   document.getElementById('menuCircle').style.backgroundColor = '#461912';
-                   document.getElementById('corner').style.backgroundColor = '#461912';
-                   document.getElementById('corner2').style.backgroundColor = '#461912';
-                   document.getElementById('corner3').style.backgroundColor = '#464619';
-                   document.getElementById('corner4').style.backgroundColor = '#464619';
-                   document.getElementById('corner5').style.backgroundColor = '#461912';
-                   document.getElementById('corner6').style.backgroundColor = '#461912';
+                   document.getElementById('menuRound').style.backgroundColor = this.col2;
+                   document.getElementById('menuRound').style.backgroundColor = this.col2;
+                   document.getElementById('menuBox').style.backgroundColor = this.col2;
+                   document.getElementById('menu').style.backgroundColor = this.col1;
+                   document.getElementById('menuCircle').style.backgroundColor = this.col2;
+                   document.getElementById('corner').style.backgroundColor = this.col2;
+                   document.getElementById('corner2').style.backgroundColor = this.col2;
+                   document.getElementById('corner3').style.backgroundColor = this.col1;
+                   document.getElementById('corner4').style.backgroundColor = this.col1;
+                   document.getElementById('corner5').style.backgroundColor = this.col2;
+                   document.getElementById('corner6').style.backgroundColor = this.col2;
                    this.txt =  'Edge of the World!';
                }
                this.round = !this.round;
+           },
+           setColor() {
+                   document.getElementById('menuRound').style.backgroundColor = this.col1;
+                   document.getElementById('menuRound').style.backgroundColor = this.col1;
+                   document.getElementById('menuBox').style.backgroundColor = this.col1;
+                   document.getElementById('menu').style.backgroundColor = this.col2;
+                   document.getElementById('menuCircle').style.backgroundColor = this.col1;
+                   document.getElementById('corner').style.backgroundColor = this.col1;
+                   document.getElementById('corner2').style.backgroundColor = this.col1;
+                   document.getElementById('corner3').style.backgroundColor = this.col2;
+                   document.getElementById('corner4').style.backgroundColor = this.col2;
+                   document.getElementById('corner5').style.backgroundColor = this.col1;
+                   document.getElementById('corner6').style.backgroundColor = this.col1;
            }
+        },
+            mounted(){
+                this.setColor()
         }
     }
 </script>
@@ -110,7 +127,7 @@
     #menuBox {
         width: 50%;
         height: 50%;
-        background: #461912;
+        //background: #DE8CF0;
         margin-left: 25%;
         border-radius: 10%;
         transition: .6s;
@@ -118,7 +135,7 @@
         z-index: 1;
     }
     #menuRound {
-        background-color: #461912;
+       // background-color: #DE8CF0;
         width: 10vw;
         height: 10vw;
         margin-top: -5vw;
@@ -130,7 +147,7 @@
     #menu {
         width: 10vw;
         height: 10vw;
-        background-color: #464619;
+        //background-color: #BED905;
         margin-left: 40%;
         margin-top: 10%;
         border-radius: 50%;
@@ -142,7 +159,7 @@
     {
         width: 40%;
         height: 40%;
-        background-color: #461912;
+        //background-color: #DE8CF0;
         margin-left:30%;
         border-radius: 50%;
         transition: .6s;
@@ -153,7 +170,7 @@
         width: 100%;
         height: 100%;
         margin-left:0%;
-        background-color: #464619;
+        //background-color: #BED905;
     }
     #corner {
         width:5vw;
@@ -162,7 +179,7 @@
         margin-top: 5vw;
         position: absolute;
         border-radius: 50%;
-        background-color: #461912;
+        //background-color: #DE8CF0;
         transition: .6s;
         transition-delay: 1.2s;
     }
@@ -173,7 +190,7 @@
         margin-top: 5vw;
         position: absolute;
         border-radius: 50%;
-        background-color: #461912;
+        //background-color: #DE8CF0;
         transition: .6s;
         transition-delay: 1.2s;
     }
@@ -184,7 +201,7 @@
         margin-top: 10vw;
         position: absolute;
         border-radius: 50%;
-        background-color:  #464619;
+        //background-color:  #BED905;
         transition: .6s;
         transition-delay: 1.2s;
         z-index: 11;
@@ -196,7 +213,7 @@
         margin-top: 10vw;
         position: absolute;
         border-radius: 50%;
-        background-color:  #464619;
+        //background-color:  #BED905;
         transition: .6s;
         transition-delay: 1.2s;
         z-index: 11;
@@ -208,7 +225,7 @@
         margin-top: 15vw;
         position: absolute;
         border-radius: 50%;
-        background-color: #461912;
+        //background-color: #DE8CF0;
         transition: .6s;
         transition-delay: 1.2s;
     }
@@ -219,7 +236,7 @@
         margin-top: 15vw;
         position: absolute;
         border-radius: 50%;
-        background-color: #461912;
+        //background-color: #DE8CF0;
         transition: .6s;
         transition-delay: 1.2s;
     }
