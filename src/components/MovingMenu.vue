@@ -1,17 +1,17 @@
 <template>
     <div id="MovingMenu">
-        <div id="itm1">1</div>
-        <div id="itm2">2</div>
-        <div id="itm3">3</div>
-        <div id="itm4">4</div>
-        <div id="itm5">5</div>
-        <div id="itm6">6</div>
-        <div id="itm7">7</div>
-        <div id="itm8">8</div>
-        <div id="itm9">9</div>
-        <div id="itm10">10</div>
-        <div id="itm11">11</div>
-        <div id="itm12">12</div>
+        <div id="itm1"></div>
+        <div id="itm2"></div>
+        <div id="itm3"></div>
+        <div id="itm4"></div>
+        <div id="itm5"></div>
+        <div id="itm6"></div>
+        <div id="itm7"></div>
+        <div id="itm8"></div>
+        <div id="itm9"></div>
+        <div id="itm10"></div>
+        <div id="itm11"></div>
+        <div id="itm12"></div>
     </div>
 </template>
 

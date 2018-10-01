@@ -12,10 +12,23 @@
         </div>
         <md-button class="md-raised md-accent"  v-on:click="changeGrid" :disabled="btn">ChangeGrid</md-button>
         <md-button class="md-raised md-primary"  v-on:click="changeMargin">ChangeMargin</md-button>
-        <div id="menuBox">
+        <md-button class="md-raised md-accent"  v-on:click="changeDisplay">changeDisplay</md-button>
+        <md-button class="md-raised md-primary"  v-on:click="changeGap">changeGap</md-button>
+        <br />
+        <div class="menuBox">
+            <moving-menu v-if="display"></moving-menu>
+
+        </div>
+        <div class="menuBox" style="transform: scale(-1, 1)">
             <moving-menu></moving-menu>
         </div>
+        <div class="menuBox" style="transform: scale(1, -1)">
+            <moving-menu  ></moving-menu>
 
+        </div>
+        <div class="menuBox" style="transform: scale(-1, -1)">
+            <moving-menu></moving-menu>
+        </div>
     </div>
 </template>
 
@@ -38,12 +51,13 @@
             return {
                 round: true,
                 btn: true,
+                display: true,
             }
         },
         methods: {
             changeGrid() {
                 let elem= document.getElementById("grid-container");
-                elem.style.gridTemplateAreas = '"a a a a a a" "f f f f f f" "b b b b b b" "c c c c c c" "h h h h h h" "d d d d d d" "e e e e e e" "g g g g g g"';
+                elem.style.gridTemplateAreas = '"c c c d d d" "f b b b h h" "f b b b g g" "f e e e g g" "a a a a a a"';
             },
             changeMargin() {
                 this.btn = false;
@@ -55,6 +69,13 @@
                 document.getElementById('item6').style.margin = '0px 0px 0px 0px';
                 document.getElementById('item7').style.margin = '0px 0px 0px 0px';
                 document.getElementById('item8').style.margin = '0px 0px 0px 0px';
+            },
+            changeDisplay() {
+              this.display = !this.display;
+            },
+            changeGap() {
+                let elem= document.getElementById("grid-container");
+                elem.style.gridGap = Math.floor(Math.random() * 60) + 'px';
             }
         }
     }
@@ -64,8 +85,11 @@
     @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Caveat|Indie+Flower|Mali|Poiret+One|Sacramento|Shadows+Into+Light|Yellowtail');
     #gridComponent {
     }
-    #menuBox {
+    .menuBox {
         position: relative;
+        height: 320px;
+        display: inline-block;
+        width: 655px;
     }
     #item1 {
         grid-area: a;
