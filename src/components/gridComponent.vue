@@ -88,7 +88,7 @@
     }
     .menuBox {
         position: relative;
-        height: 320px;
+        height: 322.5px;
         display: inline-block;
         width: 655px;
     }

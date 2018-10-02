@@ -29,7 +29,12 @@
         top: 0px;
         left: 0px;
         background-color: red;
+        opacity: 0.8;
     }
+    #itm1:hover, #itm2:hover, #itm3:hover, #itm4:hover, #itm5:hover, #itm6:hover, #itm7:hover, #itm8:hover, #itm9:hover, #itm10:hover, #itm11:hover, #itm12:hover {
+        opacity: 1;
+    }
+
     #itm1 {
         animation: 1 4s it1 forwards, infinite 15s 4s linear bcg14 forwards;
         background-color: #F47D4A;

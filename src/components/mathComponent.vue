@@ -2,7 +2,7 @@
     <div id="mathComponent">
         <div class="operation" :key="'op' + index" v-for="(item, index) in operation">{{item}}</div>
         <div class="operation">=</div>
-        <div class="answer" :key="'key' + index" v-for="(answer, index) in answers" :id="'answer' + index + Math.floor(Math.random() * 1000)"  v-on:click="checkAnswer(index)">{{answer}}</div>
+        <div class="answer" :key="'key' + index" v-for="(answer, index) in answers" :id="'answer' + index + Math.floor(Math.random() * 1000)"  v-on:click.once="checkAnswer(index)">{{answer}}</div>
     </div>
 </template>
 
