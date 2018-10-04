@@ -42,6 +42,8 @@
         <md-avatar class="md-large">
             <img class="avatar"  id="ava6" v-bind:src="arrayImg[value3]" v-on:click.once="changeValue()" alt="Avatar"/>
         </md-avatar>
+        <md-avatar class="md-large">
+        </md-avatar>
         <br/>
         <br/>
         <div style="width: 100%; text-align: left">

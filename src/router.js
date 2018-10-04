@@ -9,6 +9,7 @@ import uiComponent from './components/uiComponent'
 import gridComponent from  './components/gridComponent'
 import mathComponent from './components/mathComponent'
 import mathText from './components/mathText'
+import photoGrid from './components/photoGrid'
 
 Vue.use(Router)
 
@@ -18,6 +19,11 @@ export default new Router({
             path: '/',
             name: 'AppComponent',
             component: AppComponent
+        },
+        {
+            path: '/photoGrid',
+            name: 'photoGrid',
+            component: photoGrid
         },
         {
             path: '/grid',

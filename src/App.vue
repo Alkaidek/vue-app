@@ -18,6 +18,8 @@
         </md-tab>
         <md-tab id="tab-math-text" md-icon="add_circle" to="/mathText">
         </md-tab>
+        <md-tab id="tab-photoGrid" md-icon="photo_library" to="/photoGrid">
+        </md-tab>
         <md-tab id="tab-black-sabat" md-icon="blur_on" to="/blackSideOfTheInternet">
         </md-tab>
       </md-tabs>
@@ -56,6 +58,9 @@
           </md-button>
           <md-button class="md-icon-button" to="/mathText" style="background-color: #448aff" >
             <md-icon>add_circle</md-icon>
+          </md-button>
+          <md-button class="md-icon-button" to="/photoGrid" style="background-color: #448aff" >
+            <md-icon>photo_library</md-icon>
           </md-button>
           <md-button class="md-icon-button" to="/nowhere" style="background-color: black" >
             <md-icon>blur_on
