@@ -10,6 +10,9 @@ import gridComponent from  './components/gridComponent'
 import mathComponent from './components/mathComponent'
 import mathText from './components/mathText'
 import photoGrid from './components/photoGrid'
+import photoGrid2 from './components/photoGrid2'
+import glitchComponent from './components/glitchComponent'
+import boforeComponent from './components/boforeComponent'
 
 Vue.use(Router)
 
@@ -24,6 +27,20 @@ export default new Router({
             path: '/photoGrid',
             name: 'photoGrid',
             component: photoGrid
+        },{
+            path: '/boforeComponent',
+            name: 'boforeComponent',
+            component: boforeComponent
+        },
+        {
+            path: '/glitchComponent',
+            name: 'glitchComponent',
+            component: glitchComponent
+        },
+        {
+            path: '/photoGrid2',
+            name: 'photoGrid2',
+            component: photoGrid2
         },
         {
             path: '/grid',

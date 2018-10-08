@@ -20,6 +20,12 @@
         </md-tab>
         <md-tab id="tab-photoGrid" md-icon="photo_library" to="/photoGrid">
         </md-tab>
+        <md-tab id="tab-photoGrid2" md-icon="photo_album" to="/photoGrid2">
+        </md-tab>
+        <md-tab id="tab-glitchComponent" md-icon="flash_on" to="/glitchComponent">
+        </md-tab>
+        <md-tab id="tab-boforeComponent" md-icon="flash_on" to="/boforeComponent">
+        </md-tab>
         <md-tab id="tab-black-sabat" md-icon="blur_on" to="/blackSideOfTheInternet">
         </md-tab>
       </md-tabs>
@@ -61,6 +67,15 @@
           </md-button>
           <md-button class="md-icon-button" to="/photoGrid" style="background-color: #448aff" >
             <md-icon>photo_library</md-icon>
+          </md-button>
+          <md-button class="md-icon-button" to="/photoGrid2" style="background-color: #448aff" >
+            <md-icon>photo_album</md-icon>
+          </md-button>
+          <md-button class="md-icon-button" to="/glitchComponent" style="background-color: #448aff" >
+            <md-icon>flash_on</md-icon>
+          </md-button>
+          <md-button class="md-icon-button" to="/boforeComponent" style="background-color: #448aff" >
+            <md-icon>flash_on</md-icon>
           </md-button>
           <md-button class="md-icon-button" to="/nowhere" style="background-color: black" >
             <md-icon>blur_on
