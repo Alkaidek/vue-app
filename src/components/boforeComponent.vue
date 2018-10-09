@@ -1,6 +1,6 @@
 <template>
     <div class="boforeComponent">
-        <h1>
+        <h1 id="hajeden">
            is
         </h1>
 
@@ -24,6 +24,11 @@
     import { mix } from './mixins/mix'
     export default {
         name: "boforeComponent",
+        data: function () {
+            return {
+
+            }
+        },
         mixins: [mix]
     }
 </script>

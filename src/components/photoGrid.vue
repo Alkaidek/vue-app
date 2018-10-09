@@ -176,7 +176,10 @@
         },
         methods: {
             setImg() {
-                document.getElementById(event.target.id).style.transform = 'scale(1, 1)';
+                /*alert(event.target.id);
+                alert(window.event.target.id);
+                alert(event.target.id);*/
+                document.getElementById(window.event.target.id).style.transform = 'scale(1, 1)';
                 document.getElementById(event.target.id).style.boxShadow = '0 0 0px 0px black';
                 document.getElementById(event.target.id).style.opacity = '1';
                 document.getElementById(event.target.id).nextSibling.style.opacity = '1';
