@@ -6,11 +6,15 @@
 
         <ul>
             <li>
-                <img alt="Image" src="../assets/img/2.jpg">
+                <img alt="Image" src="../assets/img/2.jpg"/>
                 <p>Elo...</p>
             </li>
             <li>
-                <img alt="Image" src="../assets/img/1.jpg">
+                <img alt="Image" src="../static/img/1.jpg"/>
+                <p>...szka</p>
+            </li>
+            <li>
+                <img alt="Image" :src="img"/>
                 <p>...szka</p>
             </li>
         </ul>
@@ -23,10 +27,10 @@
 <script>
     import { mix } from './mixins/mix'
     export default {
-        name: "boforeComponent",
+        name: 'boforeComponent',
         data: function () {
             return {
-
+                img: require('../assets/img/1.jpg'),
             }
         },
         mixins: [mix]
